@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <title>TodoList Application</title>
+  </head>
+  <body>
+    <h1>To-do list</h1>
+    <div id="container">
+      <div class="list-container">
+        <h2 class="list-title">My Lists</h2>
+        <ul data-list>
+        </ul>
+        <form class="input-zone" data-new-list-form>
+          <input type="text" name="add-list" class="create input-list" placeholder="new list name" />
+          <button class="btn btn-list">+</button>
+        </form>
+        <div class="delete">
+          <div class="clear-task" data-clear-task>Clear completed task</div>
+          <div class="delete-list" data-delete-list>Delete list</div>
+        </div>
+      </div>
+
+      <div class="task-container" data-tasks-display-container>
+        <div class="header" >
+          <h2 class="task-title" data-header-title>Youtube</h2>
+          <p class="task-remaining" data-header-counting>3 tasks remaining</p>
+        </div>
+
+        <div class="task-body">
+          <div class="display-task" data-tasks >
+            
+          </div>
+
+          <form class="input-zone" data-new-task-form>
+            <input type="text" name="add-list" class="create input-task" placeholder="new task name" />
+            <button class="btn btn-task">+</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <template id ="task-template">
+      <div class="tasks">
+        <input type="checkbox" id="task-1" />
+        <label for="task-1">
+          <span class="custom-checkbox"></span>
+        </label>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
